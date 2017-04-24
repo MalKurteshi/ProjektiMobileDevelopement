@@ -11,7 +11,34 @@
     tools:context="com.fiek.mali.projektimobiledevelopement.MainActivity">
 
     <TextView
+        android:text="Orari Ne Fiek!"
+        android:id="@+id/txvTitulli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="88dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#73C6B6"
+
+        />
+
+
+    <Button
+        android:text="Vazhdo pa logim"
+        android:id="@+id/btnVazhdoPaLogim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnKycuMeFB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
+
+    <Button
+        android:text="Kycu me FB"
+        android:id="@+id/btnKycuMeFB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/txvTitulli"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

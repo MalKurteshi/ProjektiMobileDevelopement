@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <TextView
+
+        android:text="Zgjidhni njerin nga katet "
+        android:textAlignment="center"
+        android:id="@+id/txvKatetEobjektit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textStyle="bold"
+        android:textColor="#73C6B6"
+        />
+
+    <Button
+        android:textStyle="bold"
+        android:text="Kati I"
+        android:layout_below="@+id/txvKatetEobjektit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnKati1" />
+    <Button
+        android:textStyle="bold"
+        android:text="Kati II"
+        android:layout_below="@+id/btnKati1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnKati2" />
+    <Button
+        android:textStyle="bold"
+        android:text="Kati III"
+        android:layout_below="@+id/btnKati2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnKati3" />
+    <Button
+        android:textStyle="bold"
+        android:text="Kati IV"
+        android:layout_below="@+id/btnKati3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnKati4" />
+    <Button
+        android:textStyle="bold"
+        android:text="Kati V"
+        android:layout_below="@+id/btnKati4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnKati5" />
+    <Button
+        android:textStyle="bold"
+        android:text="Kati VI"
+        android:layout_below="@+id/btnKati5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnKati6" />
+    <Button
+        android:textStyle="bold"
+        android:text="Kati VII"
+        android:layout_below="@+id/btnKati6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnKati7" />
+
+
+</RelativeLayout>
