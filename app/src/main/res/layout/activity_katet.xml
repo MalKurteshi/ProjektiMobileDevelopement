@@ -20,17 +20,11 @@
         android:textColor="#73C6B6"
         />
 
-    <Button
-        android:textStyle="bold"
-        android:text="Kati I"
-        android:layout_below="@+id/txvKatetEobjektit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnKati1" />
+
     <Button
         android:textStyle="bold"
         android:text="Kati II"
-        android:layout_below="@+id/btnKati1"
+        android:layout_below="@+id/txvKatetEobjektit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btnKati2" />

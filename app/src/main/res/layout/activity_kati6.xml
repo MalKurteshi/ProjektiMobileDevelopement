@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kati6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fiek.mali.projektimobiledevelopement.Kati6">
+<com.github.chrisbanes.photoview.PhotoView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/imgvKati6"
+    android:src="@mipmap/kati6"
+    android:scaleType="fitXY"
+    android:contentDescription="Planimetria e katit 6"/>
+</RelativeLayout>

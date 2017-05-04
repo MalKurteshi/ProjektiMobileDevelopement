@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kati4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<com.github.chrisbanes.photoview.PhotoView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:src="@mipmap/kati4"
+    android:id="@+id/imgvKati4"
+    android:contentDescription="Planimetria e katit 4"
+    android:scaleType="fitXY"
+     />
+
+</RelativeLayout>
