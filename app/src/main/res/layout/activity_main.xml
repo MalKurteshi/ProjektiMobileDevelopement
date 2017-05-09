@@ -34,7 +34,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp" />
 
-    <Button
+    <com.facebook.login.widget.LoginButton
         android:text="Kycu me FB"
         android:id="@+id/btnKycuMeFB"
         android:layout_width="wrap_content"

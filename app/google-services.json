@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1001643333655",
+    "firebase_url": "https://orarinefiek.firebaseio.com",
+    "project_id": "orarinefiek",
+    "storage_bucket": "orarinefiek.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001643333655:android:99cc94dd1d06ea4c",
+        "android_client_info": {
+          "package_name": "com.fiek.mali.projektimobiledevelopement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001643333655-qtuk9fh31s12ttlsep3kt6mkqk60i460.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fiek.mali.projektimobiledevelopement",
+            "certificate_hash": "97886ca2d83093ca891c2e343270b1f79ff08955"
+          }
+        },
+        {
+          "client_id": "1001643333655-c3ba0di8rsjo3894josd7enrg0ll9912.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWzHADjiOMXE9ii2F3k7OlGDLuU1PzVg8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001643333655-c3ba0di8rsjo3894josd7enrg0ll9912.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
