@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fiek.mali.projektimobiledevelopement">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -24,9 +24,14 @@
         <activity android:name=".Kati7" />
         <activity android:name=".Kati3" />
         <activity android:name=".Kati2" />
-        <activity android:name=".FireBaseTest"></activity>
+        <activity android:name=".FireBaseTest" />
 
-    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".Salla408" />
+        <activity android:name=".Salla411"></activity>
     </application>
 
 </manifest>
