@@ -23,7 +23,7 @@ class Databaza extends SQLiteOpenHelper {
     private static final String SCHEDULE_COLUMN_ID = "_id";
     private static final String SCHEDULE_COLUMN_DAY = "day";
     private static final String SCHEDULE_COLUMN_CLASSNUMBER = "classnumber";
-    private static final String SCHEDULE_COLUMN_CLASSNAME = "classname";
+    private static final String SCHEDULE_COLUMN_PROFESORNAME = "profesorname";
     private static final String SCHEDULE_COLUMN_STARTTIME = "starttime";
     private static final String SCHEDULE_COLUMN_ENDTIME = "endtime";
 
@@ -34,25 +34,25 @@ class Databaza extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE schedule (_id INT PRIMARY KEY NOT NULL, day TEXT NOT NULL, classnumber TEXT NOT NULL, " +
-                "classname TEXT NOT NULL, starttime TEXT NOT NULL, endtime TEXT NOT NULL)");
+                "profesorname TEXT NOT NULL, starttime TEXT NOT NULL, endtime TEXT NOT NULL)");
         db.execSQL("CREATE TABLE comments (_id INT PRIMARY KEY NOT NULL, classroom TEXT NOT NULL, commentcontent TEXT NOT NULL, reg_date TEXT NOT NULL)");
     }
 
-    public void insertLecture(int id, String day, String classnumber, String classname, String starttime, String endtime) {
+    public void insertLecture(int id, String day, String classnumber, String profesorname, String starttime, String endtime) {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(SCHEDULE_COLUMN_ID, id);
         contentValues.put(SCHEDULE_COLUMN_DAY, day);
         contentValues.put(SCHEDULE_COLUMN_CLASSNUMBER, classnumber);
-        contentValues.put(SCHEDULE_COLUMN_CLASSNAME, classname);
+        contentValues.put(SCHEDULE_COLUMN_PROFESORNAME, profesorname);
         contentValues.put(SCHEDULE_COLUMN_STARTTIME, starttime);
         contentValues.put(SCHEDULE_COLUMN_ENDTIME, endtime);
         db.insert(SCHEDULE_TABLE_NAME, null, contentValues);
     }
 
-    public void insertLectureOrIgnore(int id, String day, String classnumber, String classname, String starttime, String endtime){
+    public void insertLectureOrIgnore(int id, String day, String classnumber, String profesorname, String starttime, String endtime){
         SQLiteDatabase db = getWritableDatabase();
-        db.execSQL("INSERT OR IGNORE INTO schedule(_id, day, classnumber, classname, starttime, endtime) VALUES('"+id+"','"+day+"','"+classnumber+"','"+classname+"','"+starttime+"','"+endtime+"')");
+        db.execSQL("INSERT OR IGNORE INTO schedule(_id, day, classnumber, classname, starttime, endtime) VALUES('"+id+"','"+day+"','"+classnumber+"','"+profesorname+"','"+starttime+"','"+endtime+"')");
     }
 
     public void insertCommentOrIgnore(int id, String classroom, String content, String reg_date){
