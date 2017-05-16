@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent objKaloNeKate = new Intent(getApplicationContext(), Katet.class);
+//                objKaloNeKate.putExtra("nrSalla","411");
                 startActivity(objKaloNeKate);
             }
         });
