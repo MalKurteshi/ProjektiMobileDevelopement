@@ -5,11 +5,95 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.fiek.mali.projektimobiledevelopement.Kati3">
-<com.github.chrisbanes.photoview.PhotoView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/imgvKati3"
-    android:src="@mipmap/kati3"
-    android:scaleType="fitXY"
-    android:contentDescription="Planimetria e katit 3"/>
+
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgvKati3"
+        android:src="@mipmap/kati3_emertimet"
+        android:scaleType="fitXY"
+        android:contentDescription="Planimetria e katit 3"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvArea_kati3_click"
+        android:src="@mipmap/kati3_click"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e areave te klikueshme ne planimetrine e katit 3"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati3_301_green"
+        android:src="@mipmap/kati3_301_green"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 301 ne katin 3 available"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati3_301_red"
+        android:src="@mipmap/kati3_301_red"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 301 ne katin 3 unavailable"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati3_303_green"
+        android:src="@mipmap/kati3_303_green"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 303 ne katin 3 available"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati3_303_red"
+        android:src="@mipmap/kati3_303_red"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 303 ne katin 3 unavailable"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati3_304_green"
+        android:src="@mipmap/kati3_304_green"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 304 ne katin 3 available"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati3_304_red"
+        android:src="@mipmap/kati3_304_red"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 304 ne katin 3 unavailable"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati3_310_green"
+        android:src="@mipmap/kati3_310_green"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 310 ne katin 3 available"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati3_310_red"
+        android:src="@mipmap/kati3_310_red"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 310 ne katin 3 unavailable"/>
+
 </RelativeLayout>

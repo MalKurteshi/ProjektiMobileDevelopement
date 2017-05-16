@@ -9,11 +9,42 @@
     <com.github.chrisbanes.photoview.PhotoView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="visible"
+        android:src="@mipmap/kati2_emertimet"
         android:id="@+id/imgvKati2"
-        android:src="@mipmap/kati2"
         android:scaleType="fitXY"
-        android:contentDescription="Planimetria e katit 2"
-
+        android:contentDescription="Planimetria me emertime te klasave ne katin 2"
         />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:src="@mipmap/kati2_click"
+        android:id="@+id/imgvArea_kati2_click"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e areave te klikueshme ne katin 2"
+        />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:src="@mipmap/kati2_201_green"
+        android:id="@+id/imgvkati2_201_green"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 201 ne katin 2 available"
+        />
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:src="@mipmap/kati2_201_red"
+        android:id="@+id/imgvkati2_201_red"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 201 ne katin 2 unavailable"
+        />
+
+
 
 </RelativeLayout>

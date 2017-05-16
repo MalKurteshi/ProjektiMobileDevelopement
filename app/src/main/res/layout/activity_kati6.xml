@@ -5,11 +5,167 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.fiek.mali.projektimobiledevelopement.Kati6">
-<com.github.chrisbanes.photoview.PhotoView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/imgvKati6"
-    android:src="@mipmap/kati6"
-    android:scaleType="fitXY"
-    android:contentDescription="Planimetria e katit 6"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgvKati6"
+        android:src="@mipmap/kati6_emertimet"
+        android:scaleType="fitXY"
+        android:contentDescription="Planimetria e katit 6"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@mipmap/kati6_click"
+        android:id="@+id/imgvArea_kati6_click"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        android:contentDescription="Foto e areave te klikueshme ne planimetrine e katit 6"
+        />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_602_green"
+        android:src="@mipmap/kati6_602_green"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 602 ne katin 6 available"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_602_red"
+        android:src="@mipmap/kati6_602_red"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 602 ne katin 6 unavailable"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_606_green"
+        android:src="@mipmap/kati6_606_green"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 606 ne katin 6 available"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_606_red"
+        android:src="@mipmap/kati6_606_red"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 606 ne katin 6 unavailable"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_611_green"
+        android:src="@mipmap/kati6_611_green"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 611 ne katin 6 available"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_611_red"
+        android:src="@mipmap/kati6_611_red"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 611 ne katin 6 unavailable"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_615_green"
+        android:src="@mipmap/kati6_615_green"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 615 ne katin 6 available"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_615_red"
+        android:src="@mipmap/kati6_615_red"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 615 ne katin 6 unavailable"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_616_green"
+        android:src="@mipmap/kati6_616_green"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 616 ne katin 6 available"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_616_red"
+        android:src="@mipmap/kati6_616_red"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 616 ne katin 6 unavailable"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_621_green"
+        android:src="@mipmap/kati6_621_green"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 621 ne katin 6 available"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_621_red"
+        android:src="@mipmap/kati6_621_red"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 621 ne katin 6 unavailable"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_626_green"
+        android:src="@mipmap/kati6_626_green"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 626 ne katin 6 available"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_626_red"
+        android:src="@mipmap/kati6_626_red"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 626 ne katin 6 unavailable"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_636_green"
+        android:src="@mipmap/kati6_636_green"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 636 ne katin 6 available"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati6_636_red"
+        android:src="@mipmap/kati6_636_red"
+        android:scaleType="fitXY"
+        android:contentDescription="Foto e salles 636 ne katin 6 unavailable"/>
+
 </RelativeLayout>
