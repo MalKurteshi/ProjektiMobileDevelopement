@@ -17,14 +17,15 @@ public class Klasat extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_klasat);
+        imgKlasa = (PhotoView) findViewById(R.id.imgvClassPhoto);
 
         Intent myintent = getIntent();
         String nrSalla =myintent.getStringExtra("nrSalla");
         Log.d("nrSalla",nrSalla);
 
         Context c = getApplicationContext();
-        int id = c.getResources().getIdentifier("drawable/"+"salla"+nrSalla, null, c.getPackageName());
-        ((PhotoView)imgKlasa.findViewById(R.id.imgvClassPhoto)).setImageResource(id);
+        int id = c.getResources().getIdentifier("@mipmap/"+"salla"+nrSalla, null, c.getPackageName());
+        imgKlasa.setImageResource(id);
 
         // merr orari ne baze te nrSalla
         // merr kommentet ne baze te nrSalla

@@ -9,13 +9,16 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.github.chrisbanes.photoview.PhotoView;
+
 public class Kati6 extends AppCompatActivity {
 
-    ImageView imgvKati6 = (ImageView) findViewById(R.id.imgvKati6);
+    PhotoView imgvKati6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kati6);
+        imgvKati6 = (PhotoView) findViewById(R.id.imgvKati6);
 
         imgvKati6.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -78,7 +81,7 @@ public class Kati6 extends AppCompatActivity {
 
 
     private int getHotspotColor(int x, int y) {
-        ImageView img = (ImageView) findViewById(R.id.imgvArea_kati6_click);
+        PhotoView img = (PhotoView) findViewById(R.id.imgvArea_kati6_click);
         img.setDrawingCacheEnabled(true);
         Bitmap hotspots = Bitmap.createBitmap(img.getDrawingCache());
         img.setDrawingCacheEnabled(false);
