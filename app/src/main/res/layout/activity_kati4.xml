@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     >
 
-
     <com.github.chrisbanes.photoview.PhotoView
         android:layout_height="match_parent"
         android:layout_width="match_parent"
@@ -16,103 +15,92 @@
         android:scaleType="fitXY"
          />
 
-    <com.github.chrisbanes.photoview.PhotoView
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:src="@mipmap/kati4_click"
-        android:id="@+id/imgvArea_kati4_click"
-        android:scaleType="fitXY"
-        android:visibility="invisible"
-        android:contentDescription="Foto e areave te klikueshme ne planimetrine e katit 4"
-        />
-
-    <com.github.chrisbanes.photoview.PhotoView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible"
         android:id="@+id/imgvkati4_401_green"
         android:src="@mipmap/kati4_401_green"
-        android:scaleType="fitXY"
         android:contentDescription="Foto e salles 401 ne katin 4 available"/>
 
-    <com.github.chrisbanes.photoview.PhotoView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible"
         android:id="@+id/imgvkati4_401_red"
         android:src="@mipmap/kati4_401_red"
-        android:scaleType="fitXY"
         android:contentDescription="Foto e salles 401 ne katin 4 unavailable"/>
 
-    <com.github.chrisbanes.photoview.PhotoView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible"
         android:id="@+id/imgvkati4_408_green"
         android:src="@mipmap/kati4_408_green"
-        android:scaleType="fitXY"
         android:contentDescription="Foto e salles 408 ne katin 4 available"/>
 
-    <com.github.chrisbanes.photoview.PhotoView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible"
         android:id="@+id/imgvkati4_408_red"
         android:src="@mipmap/kati4_408_red"
-        android:scaleType="fitXY"
         android:contentDescription="Foto e salles 408 ne katin 4 unavailable"/>
 
-    <com.github.chrisbanes.photoview.PhotoView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible"
         android:id="@+id/imgvkati4_411_green"
         android:src="@mipmap/kati4_411_green"
-        android:scaleType="fitXY"
         android:contentDescription="Foto e salles 411 ne katin 4 available"/>
 
-    <com.github.chrisbanes.photoview.PhotoView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible"
         android:id="@+id/imgvkati4_411_red"
         android:src="@mipmap/kati4_411_red"
-        android:scaleType="fitXY"
         android:contentDescription="Foto e salles 411 ne katin 4 unavailable"/>
 
-    <com.github.chrisbanes.photoview.PhotoView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible"
         android:id="@+id/imgvkati4_414_green"
         android:src="@mipmap/kati4_414_green"
-        android:scaleType="fitXY"
         android:contentDescription="Foto e salles 414 ne katin 4 available"/>
 
-    <com.github.chrisbanes.photoview.PhotoView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible"
         android:id="@+id/imgvkati4_414_red"
         android:src="@mipmap/kati4_414_red"
-        android:scaleType="fitXY"
         android:contentDescription="Foto e salles 414 ne katin 4 unavailable"/>
 
-    <com.github.chrisbanes.photoview.PhotoView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible"
         android:id="@+id/imgvkati4_415_green"
         android:src="@mipmap/kati4_415_green"
-        android:scaleType="fitXY"
         android:contentDescription="Foto e salles 415 ne katin 4 available"/>
 
-    <com.github.chrisbanes.photoview.PhotoView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible"
         android:id="@+id/imgvkati4_415_red"
         android:src="@mipmap/kati4_415_red"
-        android:scaleType="fitXY"
         android:contentDescription="Foto e salles 415 ne katin 4 unavailable"/>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@mipmap/kati4_click"
+        android:id="@+id/imgvArea_kati4_click"
+        android:visibility="invisible"
+        android:contentDescription="Foto e areave te klikueshme ne planimetrine e katit 4"
+        />
 </RelativeLayout>

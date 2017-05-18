@@ -36,11 +36,8 @@ import org.joda.time.LocalTime;
 public class Kati4 extends AppCompatActivity {
 
     private Databaza objDB;
-    private static final String lecturesDBURL = "http://200.6.254.247/my-service.php";//url jane ndryshe
-    private static final String commentDBURL = "http://200.6.254.247/comments.php?t=0";//url ndryshe
-
-
-
+    private static final String lecturesDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/my-service.php";
+    private static final String commentDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/comments.php?t=0";
 
     PhotoView imgvKati4;
     @Override
@@ -95,7 +92,7 @@ public class Kati4 extends AppCompatActivity {
                             int414.putExtra("nrSalla","414");
                             startActivity(int414);
                         }
-                        if (closeMatch(Color.BLACK, touch_color, tolerance)) {
+                        if (closeMatch(Color.rgb(56, 116, 65), touch_color, tolerance)) {
                             Intent int415 = new Intent(getApplicationContext(), Klasat.class);
                             int415.putExtra("nrSalla","415");
                             startActivity(int415);
@@ -108,8 +105,6 @@ public class Kati4 extends AppCompatActivity {
 
 
     }
-
-
 
     private boolean isNetworkAvailable() {
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -150,7 +145,7 @@ public class Kati4 extends AppCompatActivity {
         objCursor.close();
         ImageView imageView;
         if(nrRows < 1) {
-            String nrClass = "imgvClass" + classnumber +"Green";
+            String nrClass = "imgvkati4_" + classnumber +"_green";
             int resID = getResources().getIdentifier(nrClass, "id", getPackageName());
             imageView = (ImageView) findViewById(resID);
             imageView.setVisibility(View.VISIBLE);
@@ -170,13 +165,13 @@ public class Kati4 extends AppCompatActivity {
                     LocalTime ltEndtime = new LocalTime(strEndtime);
 
                     if (now.isAfter(ltStarttime) && now.isBefore(ltEndtime)) {
-                        String nrClass = "imgvClass" + classnumber + "Red";
+                        String nrClass = "imgvkati4_" + classnumber + "_red";
                         int resID = getResources().getIdentifier(nrClass, "id", getPackageName());
                         imageView = (ImageView) findViewById(resID);
                         imageView.setVisibility(View.VISIBLE);
                     }
                     else {
-                        String nrClass = "imgvClass" + classnumber + "Green";
+                        String nrClass = "imgvkati4_" + classnumber + "_green";
                         int resID = getResources().getIdentifier(nrClass, "id", getPackageName());
                         imageView = (ImageView) findViewById(resID);
                         imageView.setVisibility(View.VISIBLE);
@@ -188,7 +183,6 @@ public class Kati4 extends AppCompatActivity {
         }
 
     }
-
 
     public class RetrieveComments extends AsyncTask<Void,Void,JSONArray> {
 
@@ -261,7 +255,6 @@ public class Kati4 extends AppCompatActivity {
             }
         }
     }
-
 
     public class RetrieveSchedule extends AsyncTask<Void, Void, JSONArray> {
 

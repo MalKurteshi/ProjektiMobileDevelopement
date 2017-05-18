@@ -5,59 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.fiek.mali.projektimobiledevelopement.Kati7">
+
     <com.github.chrisbanes.photoview.PhotoView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/imgvKati7"
         android:src="@mipmap/kati7_emertimet"
-        android:scaleType="fitXY"
         android:contentDescription="Planimetria e katit 7"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati7_745_green"
+        android:src="@mipmap/kati7_745_green"
+        android:contentDescription="Foto e salles 745 ne katin 7 available"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati7_745_red"
+        android:src="@mipmap/kati7_745_red"
+        android:contentDescription="Foto e salles 745 ne katin 7 unavailable"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati7_748_green"
+        android:src="@mipmap/kati7_748_green"
+        android:contentDescription="Foto e salles 748 ne katin 7 available"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/imgvkati7_748_red"
+        android:src="@mipmap/kati7_748_red"
+        android:contentDescription="Foto e salles 748 ne katin 7 unavailable"/>
 
     <com.github.chrisbanes.photoview.PhotoView
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:src="@mipmap/kati7_click"
         android:id="@+id/imgvArea_kati7_click"
-        android:scaleType="fitXY"
         android:visibility="invisible"
         android:contentDescription="Foto e areave te klikueshme ne planimetrine e katit 7"
         />
-
-    <com.github.chrisbanes.photoview.PhotoView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="invisible"
-        android:id="@+id/imgvkati7_745_green"
-        android:src="@mipmap/kati7_745_green"
-        android:scaleType="fitXY"
-        android:contentDescription="Foto e salles 745 ne katin 7 available"/>
-
-    <com.github.chrisbanes.photoview.PhotoView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="invisible"
-        android:id="@+id/imgvkati7_745_red"
-        android:src="@mipmap/kati7_745_red"
-        android:scaleType="fitXY"
-        android:contentDescription="Foto e salles 745 ne katin 7 unavailable"/>
-
-    <com.github.chrisbanes.photoview.PhotoView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="invisible"
-        android:id="@+id/imgvkati7_748_green"
-        android:src="@mipmap/kati7_748_green"
-        android:scaleType="fitXY"
-        android:contentDescription="Foto e salles 748 ne katin 7 available"/>
-
-    <com.github.chrisbanes.photoview.PhotoView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="invisible"
-        android:id="@+id/imgvkati7_748_red"
-        android:src="@mipmap/kati7_748_red"
-        android:scaleType="fitXY"
-        android:contentDescription="Foto e salles 748 ne katin 7 unavailable"/>
-
 
 </RelativeLayout>
