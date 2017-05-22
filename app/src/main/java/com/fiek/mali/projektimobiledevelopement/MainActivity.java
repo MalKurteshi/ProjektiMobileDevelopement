@@ -45,10 +45,6 @@ public class MainActivity extends AppCompatActivity {
     private CallbackManager mCallbackManager;
     ProgressDialog progressDialog;
 
-    private TextView mStatusTextView;
-    private GoogleApiClient mGoogleApiClient;
-
-    private static final int RC_SIGN_IN = 9001;
 
 
     @Override
@@ -78,11 +74,13 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("FBauth", "facebook:onSuccess:" + loginResult);
                 handleFacebookAccessToken(loginResult.getAccessToken());
             }
+
             @Override
             public void onCancel() {
                 Log.d("FBauth", "facebook:onCancel");
                 // ...
             }
+
             @Override
             public void onError(FacebookException error) {
                 Log.d("FBauth", "facebook:onError", error);
@@ -90,100 +88,37 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //google
-        mStatusTextView = (TextView) findViewById(R.id.status);
-        findViewById(R.id.sign_in_button).setOnClickListener((View.OnClickListener) this);
+
 
         // Inicializimi i variableve
-        mAuth = FirebaseAuth.getInstance();
+//        mAuth = FirebaseAuth.getInstance();
         // Initialize Facebook Login button
         mCallbackManager = CallbackManager.Factory.create();
 
-
-
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestEmail()
-                .build();
-
-
-        mGoogleApiClient = new GoogleApiClient.Builder(this)
-//                .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
-                .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
-                .build();
-
-        SignInButton signInButton = (SignInButton) findViewById(R.id.sign_in_button);
-        signInButton.setSize(SignInButton.SIZE_STANDARD);
     }
 
 
 
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.sign_in_button:
-                signIn();
-                break;
-            // ...
-        }
-    }
-
-    private void signIn() {
-        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
-        startActivityForResult(signInIntent, RC_SIGN_IN);
-    }
+//    private void signIn() {
+//        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
+//        startActivityForResult(signInIntent, RC_SIGN_IN);
+//    }
 
 
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+        Intent objKaloNeKate = new Intent(getApplicationContext(), Katet.class);
+        startActivity(objKaloNeKate);
         // Pass the activity result back to the Facebook SDK
         mCallbackManager.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == RC_SIGN_IN) {
-            GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
-            handleSignInResult(result);
-        }
     }
 
 
-    @Override
-    public void onStart() {
-        super.onStart();
 
-        OptionalPendingResult<GoogleSignInResult> opr = Auth.GoogleSignInApi.silentSignIn(mGoogleApiClient);
-        if (opr.isDone()) {
-            // If the user's cached credentials are valid, the OptionalPendingResult will be "done"
-            // and the GoogleSignInResult will be available instantly.
-            Log.d("GoogleSignIn", "Got cached sign-in");
-            GoogleSignInResult result = opr.get();
-            handleSignInResult(result);
-        } else {
-            // If the user has not previously signed in on this device or the sign-in has expired,
-            // this asynchronous branch will attempt to sign in the user silently.  Cross-device
-            // single sign-on will occur in this branch.
-            progressDialog.show();
-            opr.setResultCallback(new ResultCallback<GoogleSignInResult>() {
-                @Override
-                public void onResult(GoogleSignInResult googleSignInResult) {
-                    progressDialog.hide();
-                    handleSignInResult(googleSignInResult);
-                }
-            });
-        }
-    }
 
-    private void handleSignInResult(GoogleSignInResult result) {
-        Log.d("GoogleSignIn", "handleSignInResult:" + result.isSuccess());
-        if (result.isSuccess()) {
-            // Signed in successfully, show authenticated UI.
-            GoogleSignInAccount acct = result.getSignInAccount();
-            mStatusTextView.setText(getString(R.string.signed_in_fmt, acct.getDisplayName()));
-//            updateUI(true);
-        } else {
-            // Signed out, show unauthenticated UI.
-//            updateUI(false);
-        }
-    }
     private void handleFacebookAccessToken(AccessToken token) {
         Log.d("FBtoken", "handleFacebookAccessToken:" + token);
         // [START_EXCLUDE silent]
@@ -203,8 +138,8 @@ public class MainActivity extends AppCompatActivity {
                             Toast.makeText(MainActivity.this, "Email: "+ user.getEmail(),
                                     Toast.LENGTH_SHORT).show();
 //                            updateUI(user);
-                            // dil ne aktivitetin tjeter p.sh
-                            
+                            // dil ne aktivitetin tjeter p.sh listen e kateve
+
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("FBsignInFailure", "signInWithCredential:failure", task.getException());
