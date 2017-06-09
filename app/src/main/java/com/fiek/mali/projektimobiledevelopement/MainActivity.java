@@ -21,13 +21,13 @@ import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.auth.api.signin.GoogleSignInResult;
+//import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+//import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+//import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.SignInButton;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.OptionalPendingResult;
-import com.google.android.gms.common.api.ResultCallback;
+//import com.google.android.gms.common.api.GoogleApiClient;
+//import com.google.android.gms.common.api.OptionalPendingResult;
+//import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
     private CallbackManager mCallbackManager;
     ProgressDialog progressDialog;
 
+    //Google
+//    SignInButton signInButtonGoogle;
 
 
     @Override
@@ -60,10 +62,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent objKaloNeKate = new Intent(getApplicationContext(), Katet.class);
-//                objKaloNeKate.putExtra("nrSalla","411");
                 startActivity(objKaloNeKate);
             }
         });
+
+//        Google
+//        signInButtonGoogle= (SignInButton) findViewById(R.id.sign_in_button);
+//        signInButtonGoogle.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent objSignIn = new Intent(getApplicationContext(), SignIn.class);
+//                startActivity(objSignIn);
+//            }
+//        });
+
+        // Inicializimi i variableve
+         mAuth = FirebaseAuth.getInstance();
+
         // Butoni2
         mCallbackManager = CallbackManager.Factory.create();
         LoginButton loginButton = (LoginButton) findViewById(R.id.btnKycuMeFB);
@@ -88,10 +103,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-        // Inicializimi i variableve
-//        mAuth = FirebaseAuth.getInstance();
         // Initialize Facebook Login button
         mCallbackManager = CallbackManager.Factory.create();
 
@@ -140,6 +151,7 @@ public class MainActivity extends AppCompatActivity {
 //                            updateUI(user);
                             // dil ne aktivitetin tjeter p.sh listen e kateve
 
+
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("FBsignInFailure", "signInWithCredential:failure", task.getException());
@@ -154,9 +166,6 @@ public class MainActivity extends AppCompatActivity {
                         // [END_EXCLUDE]
                     }
                 });
-
-
-
 
     }
 }

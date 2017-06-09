@@ -201,6 +201,7 @@ public class Kati4 extends AppCompatActivity {
 
             HttpURLConnection objURLConnection = null;
             URL objURL;
+
             JSONArray objJSON = null;
             InputStream objInStream = null;
 

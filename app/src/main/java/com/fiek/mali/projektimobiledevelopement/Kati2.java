@@ -298,17 +298,21 @@ public class Kati2 extends AppCompatActivity {
                 Log.e("JSON Exception", this.mException.toString());
             }
             try {
-                for (int i = 0; i < result.length(); i++) {
-                    JSONObject jsonObjectLecture = result.getJSONObject(i);
-                    int lectureID = jsonObjectLecture.getInt("id");
-                    String lectureDay = jsonObjectLecture.getString("day");
-                    String lectureClassNumber = jsonObjectLecture.getString("classnumber");
-                    String lectureClassName = jsonObjectLecture.getString("classname");
-                    String lectureStartTime = jsonObjectLecture.getString("starttime");
-                    String lectureEndTime = jsonObjectLecture.getString("endtime");
-                    objDB.insertLectureOrIgnore(lectureID, lectureDay, lectureClassNumber,lectureClassName, lectureStartTime, lectureEndTime);
-                }
-            } catch (JSONException e) {
+//                if(result != null) {
+                    for (int i = 0; i < result.length(); i++) {
+                        JSONObject jsonObjectLecture = result.getJSONObject(i);
+                        int lectureID = jsonObjectLecture.getInt("id");
+                        String lectureDay = jsonObjectLecture.getString("day");
+                        String lectureClassNumber = jsonObjectLecture.getString("classnumber");
+                        String lectureClassName = jsonObjectLecture.getString("classname");
+                        String lectureStartTime = jsonObjectLecture.getString("starttime");
+                        String lectureEndTime = jsonObjectLecture.getString("endtime");
+                        objDB.insertLectureOrIgnore(lectureID, lectureDay, lectureClassNumber, lectureClassName, lectureStartTime, lectureEndTime);
+                    }
+//                }
+            }
+            catch (JSONException e)
+            {
                 e.printStackTrace();
             }
             colorAvailability("201");
