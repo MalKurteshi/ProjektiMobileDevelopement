@@ -342,12 +342,16 @@ public class Kati6 extends AppCompatActivity {
                 for (int i = 0; i < result.length(); i++) {
                     JSONObject jsonObjectLecture = result.getJSONObject(i);
                     int lectureID = jsonObjectLecture.getInt("id");
-                    String lectureDay = jsonObjectLecture.getString("day");
-                    String lectureClassNumber = jsonObjectLecture.getString("classnumber");
-                    String lectureClassName = jsonObjectLecture.getString("classname");
+                    String lectureDay = jsonObjectLecture.getString("dita");
+                    String lectureClassNumber = jsonObjectLecture.getString("nrKlasa");
                     String lectureStartTime = jsonObjectLecture.getString("starttime");
                     String lectureEndTime = jsonObjectLecture.getString("endtime");
-                    objDB.insertLectureOrIgnore(lectureID, lectureDay, lectureClassNumber,lectureClassName, lectureStartTime, lectureEndTime);
+                    String lectureGroup = jsonObjectLecture.getString("grupi");
+                    String lectureType = jsonObjectLecture.getString("ligjerata_ushtrime");
+                    String lectureProfesor = jsonObjectLecture.getString("prof");
+                    String lectureSubject = jsonObjectLecture.getString("lenda");
+
+                    objDB.insertLectureOrIgnore(lectureID, lectureDay, lectureClassNumber, lectureStartTime, lectureEndTime, lectureGroup, lectureType,lectureProfesor,lectureSubject );
                 }
             } catch (JSONException e) {
                 e.printStackTrace();

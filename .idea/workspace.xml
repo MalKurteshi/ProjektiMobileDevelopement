@@ -10,21 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8424bf1f-0134-4107-92d3-5fcbfbb466c8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/customtabs_25_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/SignIn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_sign_in.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/customtabs_25_0_0.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/cardview_v7_25_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/cardview_v7_25_3_1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/facebook_android_sdk_4_22_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/facebook_android_sdk_4_23_0.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_auth_10_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_auth_10_2_6.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/facebook_android_sdk_4_23_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/facebook_android_sdk_4_24_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/joda_time_2_9_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/joda_time_2_9_4.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_25_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_25_3_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Databaza.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Databaza.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati2.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati3.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati3.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati4.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati4.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati5.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati5.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati6.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati6.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati7.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati7.java" />
     </list>
     <ignored path="ProjektiMobileDevelopement.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,11 +58,10 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-315">
+            <state relative-caret-position="663">
               <caret line="73" column="29" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="29" />
               <folding>
-                <element signature="e#4922#6361#0" expanded="true" />
-                <element signature="e#6360#6361#0" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -73,39 +70,150 @@
       <file leaf-file-name="Kati4.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="204" column="30" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="30" />
+            <state relative-caret-position="405">
+              <caret line="259" column="75" selection-start-line="259" selection-start-column="75" selection-end-line="259" selection-end-column="75" />
+              <folding>
+                <element signature="method#onCreate#0;class#Kati4#0" expanded="false" />
+                <element signature="method#isNetworkAvailable#0;class#Kati4#0" expanded="false" />
+                <element signature="method#getHotspotColor#0;class#Kati4#0" expanded="false" />
+                <element signature="method#closeMatch#0;class#Kati4#0" expanded="false" />
+                <element signature="method#colorAvailability#0;class#Kati4#0" expanded="false" />
+                <element signature="class#RetrieveComments#0;class#Kati4#0" expanded="false" />
+                <element signature="class#RetrieveSchedule#0;class#Kati4#0" expanded="false" />
+                <element signature="method#onPreExecute#0;class#RetrieveSchedule#0;class#Kati4#0" expanded="false" />
+                <element signature="method#doInBackground#0;class#RetrieveSchedule#0;class#Kati4#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kati5.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati5.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="286" column="75" selection-start-line="286" selection-start-column="75" selection-end-line="286" selection-end-column="75" />
+              <folding>
+                <element signature="method#onCreate#0;class#Kati5#0" expanded="false" />
+                <element signature="method#isNetworkAvailable#0;class#Kati5#0" expanded="false" />
+                <element signature="method#getHotspotColor#0;class#Kati5#0" expanded="false" />
+                <element signature="method#closeMatch#0;class#Kati5#0" expanded="false" />
+                <element signature="method#colorAvailability#0;class#Kati5#0" expanded="false" />
+                <element signature="class#RetrieveComments#0;class#Kati5#0" expanded="false" />
+                <element signature="class#RetrieveSchedule#0;class#Kati5#0" expanded="false" />
+                <element signature="method#onPreExecute#0;class#RetrieveSchedule#0;class#Kati5#0" expanded="false" />
+                <element signature="method#doInBackground#0;class#RetrieveSchedule#0;class#Kati5#0" expanded="false" />
+                <element signature="method#onPostExecute#0;class#RetrieveSchedule#0;class#Kati5#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kati6.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati6.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="333" column="55" selection-start-line="333" selection-start-column="55" selection-end-line="333" selection-end-column="55" />
+              <folding>
+                <element signature="method#onCreate#0;class#Kati6#0" expanded="false" />
+                <element signature="method#isNetworkAvailable#0;class#Kati6#0" expanded="false" />
+                <element signature="method#getHotspotColor#0;class#Kati6#0" expanded="false" />
+                <element signature="method#closeMatch#0;class#Kati6#0" expanded="false" />
+                <element signature="method#colorAvailability#0;class#Kati6#0" expanded="false" />
+                <element signature="class#RetrieveComments#0;class#Kati6#0" expanded="false" />
+                <element signature="method#onPreExecute#0;class#RetrieveSchedule#0;class#Kati6#0" expanded="false" />
+                <element signature="method#doInBackground#0;class#RetrieveSchedule#0;class#Kati6#0" expanded="false" />
+                <element signature="method#onPostExecute#0;class#RetrieveSchedule#0;class#Kati6#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kati7.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati7.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="296" column="55" selection-start-line="296" selection-start-column="55" selection-end-line="296" selection-end-column="55" />
+              <folding>
+                <element signature="method#onCreate#0;class#Kati7#0" expanded="false" />
+                <element signature="method#isNetworkAvailable#0;class#Kati7#0" expanded="false" />
+                <element signature="method#getHotspotColor#0;class#Kati7#0" expanded="false" />
+                <element signature="method#closeMatch#0;class#Kati7#0" expanded="false" />
+                <element signature="method#colorAvailability#0;class#Kati7#0" expanded="false" />
+                <element signature="class#RetrieveComments#0;class#Kati7#0" expanded="false" />
+                <element signature="method#onPreExecute#0;class#RetrieveSchedule#0;class#Kati7#0" expanded="false" />
+                <element signature="method#doInBackground#0;class#RetrieveSchedule#0;class#Kati7#0" expanded="false" />
+                <element signature="method#onPostExecute#0;class#RetrieveSchedule#0;class#Kati7#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Klasat.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Klasat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Kati2.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Kati2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="892">
-              <caret line="312" column="13" selection-start-line="312" selection-start-column="13" selection-end-line="312" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="286">
+              <caret line="313" column="0" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
+              <folding>
+                <element signature="method#onCreate#0;class#Kati2#0" expanded="false" />
+                <element signature="method#getHotspotColor#0;class#Kati2#0" expanded="false" />
+                <element signature="method#closeMatch#0;class#Kati2#0" expanded="false" />
+                <element signature="method#isNetworkAvailable#0;class#Kati2#0" expanded="false" />
+                <element signature="method#colorAvailability#0;class#Kati2#0" expanded="false" />
+                <element signature="class#RetrieveComments#0;class#Kati2#0" expanded="false" />
+                <element signature="method#onPreExecute#0;class#RetrieveSchedule#0;class#Kati2#0" expanded="false" />
+                <element signature="method#doInBackground#0;class#RetrieveSchedule#0;class#Kati2#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Databaza.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Kati3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="253" column="75" selection-start-line="253" selection-start-column="75" selection-end-line="253" selection-end-column="75" />
+              <folding>
+                <element signature="method#onCreate#0;class#Kati3#0" expanded="false" />
+                <element signature="e#2102#3992#0" expanded="true" />
+                <element signature="e#3991#3992#0" expanded="true" />
+                <element signature="method#isNetworkAvailable#0;class#Kati3#0" expanded="false" />
+                <element signature="method#getHotspotColor#0;class#Kati3#0" expanded="false" />
+                <element signature="method#closeMatch#0;class#Kati3#0" expanded="false" />
+                <element signature="method#colorAvailability#0;class#Kati3#0" expanded="false" />
+                <element signature="class#RetrieveComments#0;class#Kati3#0" expanded="false" />
+                <element signature="method#onPreExecute#0;class#RetrieveComments#0;class#Kati3#0" expanded="false" />
+                <element signature="method#doInBackground#0;class#RetrieveComments#0;class#Kati3#0" expanded="false" />
+                <element signature="method#onPostExecute#0;class#RetrieveComments#0;class#Kati3#0" expanded="false" />
+                <element signature="class#RetrieveSchedule#0;class#Kati3#0" expanded="false" />
+                <element signature="method#onPreExecute#0;class#RetrieveSchedule#0;class#Kati3#0" expanded="false" />
+                <element signature="method#doInBackground#0;class#RetrieveSchedule#0;class#Kati3#0" expanded="false" />
+                <element signature="method#onPostExecute#0;class#RetrieveSchedule#0;class#Kati3#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Databaza.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Databaza.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="69" column="28" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204">
-              <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="935">
+              <caret line="146" column="265" selection-start-line="146" selection-start-column="265" selection-end-line="146" selection-end-column="265" />
+              <folding>
+                <element signature="e#449#467#0" expanded="false" />
+                <element signature="e#5592#5593#0" expanded="true" />
+                <element signature="e#5650#5651#0" expanded="true" />
+                <element signature="e#9163#9219#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -221,11 +329,6 @@
                 <option name="description" value="Prepare com.android.support:support-media-compat:25.3.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareComAndroidSupportSupportMediaCompat2531Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.facebook.android:facebook-android-sdk:4.23.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComFacebookAndroidFacebookAndroidSdk4230Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:support-vector-drawable:25.3.1" />
@@ -851,6 +954,11 @@
                 <option name="name" value="mergeDebugAndroidTestShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-android-sdk:4.24.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComFacebookAndroidFacebookAndroidSdk4240Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="clean" />
               </ExternalTaskPojo>
@@ -988,11 +1096,6 @@
                 <option name="description" value="Prepare com.android.support:support-media-compat:25.3.1" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareComAndroidSupportSupportMediaCompat2531Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.facebook.android:facebook-android-sdk:4.23.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComFacebookAndroidFacebookAndroidSdk4230Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.android.support:support-vector-drawable:25.3.1" />
@@ -1613,6 +1716,11 @@
                 <option name="name" value="mergeDebugAndroidTestShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-android-sdk:4.24.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComFacebookAndroidFacebookAndroidSdk4240Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Deletes the build directory." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="clean" />
@@ -1951,16 +2059,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati3.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_kati3.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_kati6.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_kati2.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_kati4.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_kati7.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_kati5.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati5.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati6.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati7.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
@@ -1971,15 +2075,20 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati4.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati2.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati3.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati4.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati5.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati6.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati7.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Databaza.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -2007,62 +2116,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjektiMobileDevelopement" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjektiMobileDevelopement" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjektiMobileDevelopement" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjektiMobileDevelopement" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projektimobiledevelopement" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2387,33 +2447,32 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33788395" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.4969651" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2901024" sideWeight="0.49389312" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33788395" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8890785" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.4969651" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7064846" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18664643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1860817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2421,6 +2480,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -2471,24 +2531,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2496,7 +2547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2512,8 +2562,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4922#6361#0" expanded="true" />
-            <element signature="e#6360#6361#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2522,7 +2571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2533,7 +2581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2541,7 +2588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2557,7 +2603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2580,8 +2625,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4922#6361#0" expanded="true" />
-            <element signature="e#6360#6361#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2607,7 +2651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2615,7 +2658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2639,7 +2681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2654,13 +2695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="253" column="75" selection-start-line="253" selection-start-column="75" selection-end-line="253" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -2724,32 +2758,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati7.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="43" column="55" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Katet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2764,7 +2776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2772,7 +2783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="2" column="70" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="70" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2780,7 +2790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="1119" column="0" selection-start-line="1119" selection-start-column="0" selection-end-line="1119" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2788,7 +2797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2799,7 +2807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2810,7 +2817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="115" column="19" selection-start-line="115" selection-start-column="19" selection-end-line="115" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2818,13 +2824,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="923">
           <caret line="114" column="30" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
+        <state relative-caret-position="425">
           <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
           <folding />
         </state>
@@ -2834,7 +2839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-952">
           <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2857,54 +2861,163 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Databaza.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="69" column="28" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
+        <state relative-caret-position="663">
           <caret line="73" column="29" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="29" />
           <folding>
-            <element signature="e#4922#6361#0" expanded="true" />
-            <element signature="e#6360#6361#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="253" column="75" selection-start-line="253" selection-start-column="75" selection-end-line="253" selection-end-column="75" />
+          <folding>
+            <element signature="method#onCreate#0;class#Kati3#0" expanded="false" />
+            <element signature="e#2102#3992#0" expanded="true" />
+            <element signature="e#3991#3992#0" expanded="true" />
+            <element signature="method#isNetworkAvailable#0;class#Kati3#0" expanded="false" />
+            <element signature="method#getHotspotColor#0;class#Kati3#0" expanded="false" />
+            <element signature="method#closeMatch#0;class#Kati3#0" expanded="false" />
+            <element signature="method#colorAvailability#0;class#Kati3#0" expanded="false" />
+            <element signature="class#RetrieveComments#0;class#Kati3#0" expanded="false" />
+            <element signature="method#onPreExecute#0;class#RetrieveComments#0;class#Kati3#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#RetrieveComments#0;class#Kati3#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#RetrieveComments#0;class#Kati3#0" expanded="false" />
+            <element signature="class#RetrieveSchedule#0;class#Kati3#0" expanded="false" />
+            <element signature="method#onPreExecute#0;class#RetrieveSchedule#0;class#Kati3#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#RetrieveSchedule#0;class#Kati3#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#RetrieveSchedule#0;class#Kati3#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="204" column="30" selection-start-line="204" selection-start-column="30" selection-end-line="204" selection-end-column="30" />
+        <state relative-caret-position="405">
+          <caret line="259" column="75" selection-start-line="259" selection-start-column="75" selection-end-line="259" selection-end-column="75" />
+          <folding>
+            <element signature="method#onCreate#0;class#Kati4#0" expanded="false" />
+            <element signature="method#isNetworkAvailable#0;class#Kati4#0" expanded="false" />
+            <element signature="method#getHotspotColor#0;class#Kati4#0" expanded="false" />
+            <element signature="method#closeMatch#0;class#Kati4#0" expanded="false" />
+            <element signature="method#colorAvailability#0;class#Kati4#0" expanded="false" />
+            <element signature="class#RetrieveComments#0;class#Kati4#0" expanded="false" />
+            <element signature="class#RetrieveSchedule#0;class#Kati4#0" expanded="false" />
+            <element signature="method#onPreExecute#0;class#RetrieveSchedule#0;class#Kati4#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#RetrieveSchedule#0;class#Kati4#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="286" column="75" selection-start-line="286" selection-start-column="75" selection-end-line="286" selection-end-column="75" />
+          <folding>
+            <element signature="method#onCreate#0;class#Kati5#0" expanded="false" />
+            <element signature="method#isNetworkAvailable#0;class#Kati5#0" expanded="false" />
+            <element signature="method#getHotspotColor#0;class#Kati5#0" expanded="false" />
+            <element signature="method#closeMatch#0;class#Kati5#0" expanded="false" />
+            <element signature="method#colorAvailability#0;class#Kati5#0" expanded="false" />
+            <element signature="class#RetrieveComments#0;class#Kati5#0" expanded="false" />
+            <element signature="class#RetrieveSchedule#0;class#Kati5#0" expanded="false" />
+            <element signature="method#onPreExecute#0;class#RetrieveSchedule#0;class#Kati5#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#RetrieveSchedule#0;class#Kati5#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#RetrieveSchedule#0;class#Kati5#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="333" column="55" selection-start-line="333" selection-start-column="55" selection-end-line="333" selection-end-column="55" />
+          <folding>
+            <element signature="method#onCreate#0;class#Kati6#0" expanded="false" />
+            <element signature="method#isNetworkAvailable#0;class#Kati6#0" expanded="false" />
+            <element signature="method#getHotspotColor#0;class#Kati6#0" expanded="false" />
+            <element signature="method#closeMatch#0;class#Kati6#0" expanded="false" />
+            <element signature="method#colorAvailability#0;class#Kati6#0" expanded="false" />
+            <element signature="class#RetrieveComments#0;class#Kati6#0" expanded="false" />
+            <element signature="method#onPreExecute#0;class#RetrieveSchedule#0;class#Kati6#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#RetrieveSchedule#0;class#Kati6#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#RetrieveSchedule#0;class#Kati6#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="296" column="55" selection-start-line="296" selection-start-column="55" selection-end-line="296" selection-end-column="55" />
+          <folding>
+            <element signature="method#onCreate#0;class#Kati7#0" expanded="false" />
+            <element signature="method#isNetworkAvailable#0;class#Kati7#0" expanded="false" />
+            <element signature="method#getHotspotColor#0;class#Kati7#0" expanded="false" />
+            <element signature="method#closeMatch#0;class#Kati7#0" expanded="false" />
+            <element signature="method#colorAvailability#0;class#Kati7#0" expanded="false" />
+            <element signature="class#RetrieveComments#0;class#Kati7#0" expanded="false" />
+            <element signature="method#onPreExecute#0;class#RetrieveSchedule#0;class#Kati7#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#RetrieveSchedule#0;class#Kati7#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#RetrieveSchedule#0;class#Kati7#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Klasat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Kati2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="892">
-          <caret line="312" column="13" selection-start-line="312" selection-start-column="13" selection-end-line="312" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="286">
+          <caret line="313" column="0" selection-start-line="313" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
+          <folding>
+            <element signature="method#onCreate#0;class#Kati2#0" expanded="false" />
+            <element signature="method#getHotspotColor#0;class#Kati2#0" expanded="false" />
+            <element signature="method#closeMatch#0;class#Kati2#0" expanded="false" />
+            <element signature="method#isNetworkAvailable#0;class#Kati2#0" expanded="false" />
+            <element signature="method#colorAvailability#0;class#Kati2#0" expanded="false" />
+            <element signature="class#RetrieveComments#0;class#Kati2#0" expanded="false" />
+            <element signature="method#onPreExecute#0;class#RetrieveSchedule#0;class#Kati2#0" expanded="false" />
+            <element signature="method#doInBackground#0;class#RetrieveSchedule#0;class#Kati2#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/fiek/mali/projektimobiledevelopement/Databaza.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="146" column="265" selection-start-line="146" selection-start-column="265" selection-end-line="146" selection-end-column="265" />
+          <folding>
+            <element signature="e#449#467#0" expanded="false" />
+            <element signature="e#5592#5593#0" expanded="true" />
+            <element signature="e#5650#5651#0" expanded="true" />
+            <element signature="e#9163#9219#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
