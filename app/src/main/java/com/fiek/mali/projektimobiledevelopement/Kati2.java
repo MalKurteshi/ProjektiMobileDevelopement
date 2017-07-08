@@ -306,12 +306,12 @@ public class Kati2 extends AppCompatActivity {
                         String lectureClassNumber = jsonObjectLecture.getString("nrKlasa");
                         String lectureStartTime = jsonObjectLecture.getString("starttime");
                         String lectureEndTime = jsonObjectLecture.getString("endtime");
-                        String lectureGroup = jsonObjectLecture.getString("grupi");
+                        String lectureGrupi = jsonObjectLecture.getString("grupi");
                         String lectureType = jsonObjectLecture.getString("ligjerata_ushtrime");
                         String lectureProfesor = jsonObjectLecture.getString("prof");
                         String lectureSubject = jsonObjectLecture.getString("lenda");
 
-                        objDB.insertLectureOrIgnore(lectureID, lectureDay, lectureClassNumber, lectureStartTime, lectureEndTime, lectureGroup, lectureType,lectureProfesor,lectureSubject );
+                        objDB.insertLectureOrIgnore(lectureID, lectureDay, lectureClassNumber, lectureStartTime, lectureEndTime, lectureGrupi, lectureType,lectureProfesor,lectureSubject );
                     }
 //                }
             }
