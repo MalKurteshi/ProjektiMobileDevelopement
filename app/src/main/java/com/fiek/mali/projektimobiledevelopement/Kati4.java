@@ -186,78 +186,78 @@ public class Kati4 extends AppCompatActivity {
 
     }
 
-//    public class RetrieveComments extends AsyncTask<Void,Void,JSONArray> {
-//
-//        Exception mException;
-//
-//        @Override
-//        protected void onPreExecute() {
-//            super.onPreExecute();
-//            this.mException = null;
-//        }
-//
-//        @Override
-//        protected JSONArray doInBackground(Void... voids) {
-//            StringBuilder urlString = new StringBuilder();
-//            urlString.append(commentDBURL);
-//
-//            HttpURLConnection objURLConnection = null;
-//            URL objURL;
-//
-//            JSONArray objJSON = null;
-//            InputStream objInStream = null;
-//
-//            try {
-//                objURL = new URL(urlString.toString());
-//                objURLConnection = (HttpURLConnection) objURL.openConnection();
-//                objURLConnection.setRequestMethod("GET");
-//                objURLConnection.setDoOutput(true);
-//                objURLConnection.setDoInput(true);
-//                objURLConnection.connect();
-//                objInStream = objURLConnection.getInputStream();
-//                BufferedReader objBReader = new BufferedReader(new InputStreamReader(objInStream));
-//                String line;
-//                String response = "";
-//                while ((line = objBReader.readLine()) != null) {
-//                    response += line;
-//                }
-//                objJSON = (JSONArray) new JSONTokener(response).nextValue();
-//            } catch (Exception e) {
-//                this.mException = e;
-//            } finally {
-//                if (objInStream != null) {
-//                    try {
-//                        objInStream.close(); // this will close the bReader as well
-//                    } catch (IOException ignored) {
-//                    }
-//                }
-//                if (objURLConnection != null) {
-//                    objURLConnection.disconnect();
-//                }
-//            }
-//            return objJSON;
-//        }
-//
-//        @Override
-//        protected void onPostExecute(JSONArray result) {
-//            super.onPostExecute(result);
-//            if (this.mException != null) {
-//                Log.e("JSON Exception", this.mException.toString());
-//            }
-//            try {
-//                for (int i = 0; i < result.length(); i++) {
-//                    JSONObject jsonObjectLecture = result.getJSONObject(i);
-//                    int commentID = jsonObjectLecture.getInt("id");
-//                    String commentClassroom = jsonObjectLecture.getString("classroom");
-//                    String commentContent = jsonObjectLecture.getString("commentcontent");
-//                    String reg_date = jsonObjectLecture.getString("reg_date");
-//                    objDB.insertCommentOrIgnore(commentID, commentClassroom, commentContent,reg_date);
-//                }
-//            } catch (JSONException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//    }
+    public class RetrieveComments extends AsyncTask<Void,Void,JSONArray> {
+
+        Exception mException;
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            this.mException = null;
+        }
+
+        @Override
+        protected JSONArray doInBackground(Void... voids) {
+            StringBuilder urlString = new StringBuilder();
+            urlString.append(commentDBURL);
+
+            HttpURLConnection objURLConnection = null;
+            URL objURL;
+
+            JSONArray objJSON = null;
+            InputStream objInStream = null;
+
+            try {
+                objURL = new URL(urlString.toString());
+                objURLConnection = (HttpURLConnection) objURL.openConnection();
+                objURLConnection.setRequestMethod("GET");
+                objURLConnection.setDoOutput(true);
+                objURLConnection.setDoInput(true);
+                objURLConnection.connect();
+                objInStream = objURLConnection.getInputStream();
+                BufferedReader objBReader = new BufferedReader(new InputStreamReader(objInStream));
+                String line;
+                String response = "";
+                while ((line = objBReader.readLine()) != null) {
+                    response += line;
+                }
+                objJSON = (JSONArray) new JSONTokener(response).nextValue();
+            } catch (Exception e) {
+                this.mException = e;
+            } finally {
+                if (objInStream != null) {
+                    try {
+                        objInStream.close(); // this will close the bReader as well
+                    } catch (IOException ignored) {
+                    }
+                }
+                if (objURLConnection != null) {
+                    objURLConnection.disconnect();
+                }
+            }
+            return objJSON;
+        }
+
+        @Override
+        protected void onPostExecute(JSONArray result) {
+            super.onPostExecute(result);
+            if (this.mException != null) {
+                Log.e("JSON Exception", this.mException.toString());
+            }
+            try {
+                for (int i = 0; i < result.length(); i++) {
+                    JSONObject jsonObjectLecture = result.getJSONObject(i);
+                    int commentID = jsonObjectLecture.getInt("id");
+                    String commentClassroom = jsonObjectLecture.getString("classroom");
+                    String commentContent = jsonObjectLecture.getString("commentcontent");
+                    String reg_date = jsonObjectLecture.getString("reg_date");
+                    objDB.insertCommentOrIgnore(commentID, commentClassroom, commentContent,reg_date);
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 
     public class RetrieveSchedule extends AsyncTask<Void, Void, JSONArray> {
 

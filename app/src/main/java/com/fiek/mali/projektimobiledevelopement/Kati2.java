@@ -83,6 +83,8 @@ public class Kati2 extends AppCompatActivity {
 
     }
 
+
+
     private int getHotspotColor(int x, int y) {
         PhotoView img = (PhotoView) findViewById(R.id.imgvArea_kati2_click);
         img.setDrawingCacheEnabled(true);
@@ -222,7 +224,7 @@ public class Kati2 extends AppCompatActivity {
                 for (int i = 0; i < result.length(); i++) {
                     JSONObject jsonObjectLecture = result.getJSONObject(i);
                     int commentID = jsonObjectLecture.getInt("id");
-                    String commentClassroom = jsonObjectLecture.getString("classroom");
+                    String commentClassroom = jsonObjectLecture.getString("classnumber");
                     String commentContent = jsonObjectLecture.getString("commentcontent");
                     String reg_date = jsonObjectLecture.getString("reg_date");
                     objDB.insertCommentOrIgnore(commentID, commentClassroom, commentContent,reg_date);

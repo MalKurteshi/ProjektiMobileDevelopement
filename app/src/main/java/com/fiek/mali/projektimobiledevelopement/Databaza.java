@@ -124,7 +124,15 @@ class Databaza extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE schedule (_id INT PRIMARY KEY NOT NULL, day TEXT NOT NULL, classnumber TEXT NOT NULL, " +
                 "starttime TEXT NOT NULL, endtime TEXT NOT NULL, grupi TEXT NOT NULL, type TEXT NOT NULL, profesorname TEXT NOT NULL, subject TEXT NOT NULL)");
+
+        db.execSQL("CREATE TABLE comments (_id INT PRIMARY KEY NOT NULL, classnumber TEXT NOT NULL, commentcontent TEXT NOT NULL, reg_date TEXT NOT NULL)");
+
         Log.v("Databaza","CREATE TABLE schedule (_id INT PRIMARY KEY NOT NULL, day TEXT NOT NULL, classnumber TEXT NOT NULL, starttime TEXT NOT NULL, endtime TEXT NOT NULL, grupi TEXT NOT NULL, type TEXT NOT NULL, profesorname TEXT NOT NULL, subject TEXT NOT NULL)");
+
+
+        Log.v("Databaza","CREATE TABLE comments (_id INT PRIMARY KEY NOT NULL, classnumber TEXT NOT NULL, commentcontent TEXT NOT NULL, reg_date TEXT NOT NULL)");
+
+
     }
 
     public void insertLecture(int id, String day, String classnumber, String starttime, String endtime, String grupi, String type, String profesorname, String subject) {
@@ -149,9 +157,9 @@ class Databaza extends SQLiteOpenHelper {
         Log.v("Databaza","INSERT OR IGNORE INTO schedule(_id, day, classnumber, starttime, endtime, grupi, type, profesorname, subject) VALUES('"+id+"','"+day+"','"+classnumber+"','"+starttime+"','"+endtime+"','"+grupi+"','"+type+"','"+profesorname+"','"+subject+"')");
     }
 
-    public void insertCommentOrIgnore(int id, String classroom, String content, String reg_date){
+    public void insertCommentOrIgnore(int id, String classnumber, String content, String reg_date){
         SQLiteDatabase db = getWritableDatabase();
-        db.execSQL("INSERT OR IGNORE INTO comments(_id, classroom, commentcontent, reg_date) VALUES('"+id+"','"+classroom+"','"+content+"','"+reg_date+"')");
+        db.execSQL("INSERT OR IGNORE INTO comments(_id, classnumber, commentcontent, reg_date) VALUES('"+id+"','"+classnumber+"','"+content+"','"+reg_date+"')");
     }
 
     public Cursor getAllLectures() {
@@ -183,10 +191,10 @@ class Databaza extends SQLiteOpenHelper {
         return db.rawQuery("select starttime,endtime from schedule where day='E marte' and classnumber='"+classnumber+"'",null);
     }
 
-//    public Cursor getClassComments(String classroom) {
-//        SQLiteDatabase db = this.getReadableDatabase();
-//        return db.rawQuery("select * from comments where classroom='"+classroom+"' order by reg_date desc",null);
-//    }
+    public Cursor getClassComments(String classnumber) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        return db.rawQuery("select * from comments where classnumber='"+classnumber+"' order by reg_date desc",null);
+    }
 
     public Cursor getTodayLectures(String classnumber) {
         Calendar calendar = Calendar.getInstance();
