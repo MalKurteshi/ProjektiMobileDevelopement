@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.chrisbanes.photoview.PhotoView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -42,9 +43,12 @@ public class Klasat extends AppCompatActivity {
     private ListView listComments;
     private EditText content;
     private Databaza objDB;
+    private String nrSalla;
+    private FirebaseAuth mAuth;
+    String username;
 
     private static final String commentDBURL2 = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/comments.php?t=0";
-    private static final String commentDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/comments.php?t=1&classroom=%22%22&commentcontent=%22%22&user=";
+    private static final String commentDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/comments.php?t=1&classroom=";
 
     PhotoView imgKlasa;
 
@@ -54,8 +58,10 @@ public class Klasat extends AppCompatActivity {
         setContentView(R.layout.activity_klasat);
         imgKlasa = (PhotoView) findViewById(R.id.imgvClassPhoto);
 
+
         Intent myintent = getIntent();
-        String nrSalla = myintent.getStringExtra("nrSalla");
+        nrSalla = myintent.getStringExtra("nrSalla");
+        username = myintent.getStringExtra("username");
         Log.d("nrSalla", nrSalla);
 
 
@@ -87,15 +93,19 @@ public class Klasat extends AppCompatActivity {
     }
 
     public void btnAddOnClick(@SuppressWarnings("UnusedParameters") View v) {
-        if (isNetworkAvailable()) {
-            String strContent = content.getText().toString();
-            content.setText("");
-            new InsertComment().execute("nrSalla", strContent);
-            Toast.makeText(this, "Successfully posted comment!", Toast.LENGTH_SHORT).show();
-            new RetrieveComments().execute();
-        }else
-        {
-            Toast.makeText(this, "Please connect to the internet to post comments.", Toast.LENGTH_LONG).show();
+        if(username!=null) {
+            if (isNetworkAvailable()) {
+                String strContent = content.getText().toString();
+                content.setText("");
+                new InsertComment().execute(nrSalla, strContent, username);
+                Toast.makeText(this, "Successfully posted comment!", Toast.LENGTH_SHORT).show();
+                new RetrieveComments().execute();
+            } else {
+                Toast.makeText(this, "Please connect to the internet to post comments.", Toast.LENGTH_LONG).show();
+            }
+        }
+        else{
+            Toast.makeText(this, "Please log in to comment!", Toast.LENGTH_SHORT).show();
         }
         }
 
@@ -114,7 +124,14 @@ public class Klasat extends AppCompatActivity {
                 e.printStackTrace();
             }
             urlString.append(strparams[1]);
-            Log.d("URL", urlString.toString());
+            urlString.append("&user=");
+            try {
+                strparams[2] = URLEncoder.encode(strparams[2], "utf-8");
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+            urlString.append(strparams[2]);
+            Log.v("Klasat.java", urlString.toString());
 
             // Execute URL here...
 
@@ -200,15 +217,15 @@ public class Klasat extends AppCompatActivity {
                 for (int i = 0; i < result.length(); i++) {
                     JSONObject jsonObjectLecture = result.getJSONObject(i);
                     int commentID = jsonObjectLecture.getInt("id");
-                    String commentClassroom = jsonObjectLecture.getString("classnumber");
-                    String commentContent = jsonObjectLecture.getString("commentcontent");
-                    String reg_date = jsonObjectLecture.getString("reg_date");
+                    String commentClassroom = jsonObjectLecture.getString("nrKlasa");
+                    String commentContent = jsonObjectLecture.getString("content");
+                    String reg_date = jsonObjectLecture.getString("datetimeinsert");
                     objDB.insertCommentOrIgnore(commentID, commentClassroom, commentContent,reg_date);
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            Cursor commentsCursor = objDB.getClassComments("nrSalla");
+            Cursor commentsCursor = objDB.getClassComments(nrSalla);
             if (commentsCursor.getCount()>0) {
                 commentCursorAdapter todoAdapter = new commentCursorAdapter(Klasat.this, commentsCursor);
 //                commentCursorAdapter todoAdapter = new commentCursorAdapter(class401Activity.this, commentsCursor);

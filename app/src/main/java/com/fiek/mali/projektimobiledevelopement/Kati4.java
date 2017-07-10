@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.github.chrisbanes.photoview.PhotoView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -38,6 +39,8 @@ public class Kati4 extends AppCompatActivity {
     private Databaza objDB;
     private static final String lecturesDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/my-service.php";
     private static final String commentDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/comments.php?t=0";
+    private FirebaseAuth mAuth;
+    String username;
 
     PhotoView imgvKati4;
     @Override
@@ -45,6 +48,9 @@ public class Kati4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kati4);
         imgvKati4 = (PhotoView) findViewById(R.id.imgvKati4);
+
+        Intent myintent = getIntent();
+        username = myintent.getStringExtra("username");
 
         objDB = new Databaza(this);
 
@@ -76,26 +82,31 @@ public class Kati4 extends AppCompatActivity {
                             //Vendoset intenti per me kalu ne klase
                             Intent int401 = new Intent(getApplicationContext(), Klasat.class);
                             int401.putExtra("nrSalla","401");
+                            int401.putExtra("username",username);
                             startActivity(int401);
                         }
                         if (closeMatch(Color.BLUE, touch_color, tolerance)) {
                             Intent int408 = new Intent(getApplicationContext(), Klasat.class);
                             int408.putExtra("nrSalla","408");
+                            int408.putExtra("username",username);
                             startActivity(int408);
                         }
                         if (closeMatch(Color.RED, touch_color, tolerance)) {
                             Intent int411 = new Intent(getApplicationContext(), Klasat.class);
                             int411.putExtra("nrSalla","411");
+                            int411.putExtra("username",username);
                             startActivity(int411);
                         }
                         if (closeMatch(Color.YELLOW, touch_color, tolerance)) {
                             Intent int414 = new Intent(getApplicationContext(), Klasat.class);
                             int414.putExtra("nrSalla","414");
+                            int414.putExtra("username",username);
                             startActivity(int414);
                         }
                         if (closeMatch(Color.rgb(56, 116, 65), touch_color, tolerance)) {
                             Intent int415 = new Intent(getApplicationContext(), Klasat.class);
                             int415.putExtra("nrSalla","415");
+                            int415.putExtra("username",username);
                             startActivity(int415);
                         }
                         break;

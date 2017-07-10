@@ -41,9 +41,15 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnVazhdoPaLogim;
     Button btnKycuMeFB;
-    private FirebaseAuth mAuth;
-    private CallbackManager mCallbackManager;
     ProgressDialog progressDialog;
+    FirebaseUser user = null;
+    //Firebase AUTH
+    private static final String TAG = "FacebookLogin";
+    // [START declare_auth]
+    private FirebaseAuth mAuth;
+    // [END declare_auth]
+
+    private CallbackManager mCallbackManager;
 
     //Google
 //    SignInButton signInButtonGoogle;
@@ -76,62 +82,74 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-        // Inicializimi i variableve
-         mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
+        // [END initialize_auth]
 
-        // Butoni2
+        // [START initialize_fblogin]
+        // Initialize Facebook Login button
         mCallbackManager = CallbackManager.Factory.create();
         LoginButton loginButton = (LoginButton) findViewById(R.id.btnKycuMeFB);
         loginButton.setReadPermissions("email", "public_profile");
         loginButton.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-                Log.d("FBauth", "facebook:onSuccess:" + loginResult);
+                Log.d(TAG, "facebook:onSuccess:" + loginResult);
                 handleFacebookAccessToken(loginResult.getAccessToken());
             }
 
             @Override
             public void onCancel() {
-                Log.d("FBauth", "facebook:onCancel");
-                // ...
+                Log.d(TAG, "facebook:onCancel");
+                // [START_EXCLUDE]
+//                updateUI(null);
+                // [END_EXCLUDE]
             }
 
             @Override
             public void onError(FacebookException error) {
-                Log.d("FBauth", "facebook:onError", error);
-                // ...
+                Log.d(TAG, "facebook:onError", error);
+                // [START_EXCLUDE]
+//                updateUI(null);
+                // [END_EXCLUDE]
             }
         });
-
-        // Initialize Facebook Login button
-        mCallbackManager = CallbackManager.Factory.create();
+        // [END initialize_fblogin]
 
     }
-
-
 
 //    private void signIn() {
 //        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
 //        startActivityForResult(signInIntent, RC_SIGN_IN);
 //    }
 
+    // [START on_start_check_user]
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser!=null) {
+            Intent objKaloNeKatet = new Intent(getApplicationContext(), Katet.class);
+            objKaloNeKatet.putExtra("username", currentUser.getDisplayName());
+            startActivity(objKaloNeKatet);
+            finish();
+        }
+//        updateUI(currentUser);
+    }
+    // [END on_start_check_user]
 
-
+    // [START on_activity_result]
+    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
-        Intent objKaloNeKate = new Intent(getApplicationContext(), Katet.class);
-        startActivity(objKaloNeKate);
         // Pass the activity result back to the Facebook SDK
         mCallbackManager.onActivityResult(requestCode, resultCode, data);
-
     }
+    // [END on_activity_result]
 
-
-
-
+    // [START auth_with_facebook]
     private void handleFacebookAccessToken(AccessToken token) {
-        Log.d("FBtoken", "handleFacebookAccessToken:" + token);
+        Log.d(TAG, "handleFacebookAccessToken:" + token);
         // [START_EXCLUDE silent]
         progressDialog.show();
         // [END_EXCLUDE]
@@ -143,29 +161,27 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                            Log.d("FBsignInSucces", "signInWithCredential:success");
+                            Log.d(TAG, "signInWithCredential:success");
                             FirebaseUser user = mAuth.getCurrentUser();
-                            //Qka bon ti me user
-                            Toast.makeText(MainActivity.this, "Email: "+ user.getEmail(),
-                                    Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this,user.getEmail(),Toast.LENGTH_LONG).show();
 //                            updateUI(user);
-                            // dil ne aktivitetin tjeter p.sh listen e kateve
-
-
+                            Intent objKaloNeKatet = new Intent(getApplicationContext(), Katet.class);
+                            objKaloNeKatet.putExtra("username",user.getDisplayName());
+                            startActivity(objKaloNeKatet);
+                            finish();
                         } else {
                             // If sign in fails, display a message to the user.
-                            Log.w("FBsignInFailure", "signInWithCredential:failure", task.getException());
+                            Log.w(TAG, "signInWithCredential:failure", task.getException());
                             Toast.makeText(MainActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
-                            // Qka bon ti
 //                            updateUI(null);
                         }
 
                         // [START_EXCLUDE]
-                        progressDialog.dismiss();
+                        progressDialog.hide();
                         // [END_EXCLUDE]
                     }
                 });
-
     }
+    // [END auth_with_facebook]
 }

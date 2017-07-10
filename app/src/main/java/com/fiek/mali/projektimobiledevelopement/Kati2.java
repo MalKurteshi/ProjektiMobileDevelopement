@@ -38,6 +38,7 @@ public class Kati2 extends AppCompatActivity {
     private Databaza objDB;
     private static final String lecturesDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/my-service.php";
     private static final String commentDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/comments.php?t=0";
+    String username;
 
  PhotoView imgvKati2;
 
@@ -46,6 +47,10 @@ public class Kati2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kati2);
         imgvKati2 = (PhotoView) findViewById(R.id.imgvKati2);
+
+
+        Intent myintent = getIntent();
+        username = myintent.getStringExtra("username");
 
         objDB = new Databaza(this);
 
@@ -72,6 +77,7 @@ public class Kati2 extends AppCompatActivity {
                             //Vendoset intenti per me kalu ne klasen 201 nese plotesohet aktiviteti
                             Intent int201 = new Intent(getApplicationContext(), Klasat.class);
                             int201.putExtra("nrSalla","201");
+                            int201.putExtra("username",username);
                             startActivity(int201);
                         }
 

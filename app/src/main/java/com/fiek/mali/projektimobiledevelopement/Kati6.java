@@ -38,6 +38,7 @@ public class Kati6 extends AppCompatActivity {
     private Databaza objDB;
     private static final String lecturesDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/my-service.php";
     private static final String commentDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/comments.php?t=0";
+    String username;
 
     PhotoView imgvKati6;
     @Override
@@ -45,6 +46,9 @@ public class Kati6 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kati6);
         imgvKati6 = (PhotoView) findViewById(R.id.imgvKati6);
+
+        Intent myintent = getIntent();
+        username = myintent.getStringExtra("username");
 
         objDB = new Databaza(this);
 
@@ -79,42 +83,51 @@ public class Kati6 extends AppCompatActivity {
                             //Vendoset intenti per me kalu ne klase
                             Intent int602 = new Intent(getApplicationContext(), Klasat.class);
                             int602.putExtra("nrSalla","602");
+                            int602.putExtra("username",username);
                             startActivity(int602);
                         }
                         if (closeMatch(Color.BLUE, touch_color, tolerance)) {
                             Intent int606 = new Intent(getApplicationContext(), Klasat.class);
                             int606.putExtra("nrSalla","606");
+                            int606.putExtra("username",username);
                             startActivity(int606);
                         }
                         if (closeMatch(Color.YELLOW, touch_color, tolerance)) {
                             Intent int611 = new Intent(getApplicationContext(), Klasat.class);
                             int611.putExtra("nrSalla","611");
+                            int611.putExtra("username",username);
                             startActivity(int611);
                         }
                         if (closeMatch(Color.GREEN, touch_color, tolerance)) {
                             Intent int636 = new Intent(getApplicationContext(), Klasat.class);
                             int636.putExtra("nrSalla","636");
+                            int636.putExtra("username",username);
                             startActivity(int636);
                         }
                         if (closeMatch(Color.rgb(56, 116, 65), touch_color, tolerance)) {
                             Intent int626 = new Intent(getApplicationContext(), Klasat.class);
                             int626.putExtra("nrSalla","626");
+                            int626.putExtra("username",username);
                             startActivity(int626);
                         }
                         if (closeMatch(Color.rgb(0, 255, 255), touch_color, tolerance)) {
                             Intent int621 = new Intent(getApplicationContext(), Klasat.class);
                             int621.putExtra("nrSalla","621");
+                            int621.putExtra("username",username);
                             startActivity(int621);
                         }
                         if (closeMatch(Color.WHITE, touch_color, tolerance)) {
                         Intent int616 = new Intent(getApplicationContext(), Klasat.class);
                         int616.putExtra("nrSalla","616");
-                        startActivity(int616);
+                            int616.putExtra("username",username);
+                            startActivity(int616);
                         }
                         if (closeMatch(Color.rgb(127, 0, 0), touch_color, tolerance)) {
                         Intent int615 = new Intent(getApplicationContext(), Klasat.class);
                         int615.putExtra("nrSalla","615");
-                        startActivity(int615);
+                            int615.putExtra("username",username);
+
+                            startActivity(int615);
                         }
                         break;
                 }

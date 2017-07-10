@@ -38,6 +38,7 @@ public class Kati7 extends AppCompatActivity {
     private Databaza objDB;
     private static final String lecturesDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/my-service.php";
     private static final String commentDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/comments.php?t=0";
+    String username;
 
     PhotoView imgvKati7;
     @Override
@@ -45,6 +46,9 @@ public class Kati7 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kati7);
         imgvKati7 = (PhotoView) findViewById(R.id.imgvKati7);
+
+        Intent myintent = getIntent();
+        username = myintent.getStringExtra("username");
 
         objDB = new Databaza(this);
 
@@ -71,11 +75,13 @@ public class Kati7 extends AppCompatActivity {
                             //Vendoset intenti per me kalu ne klase
                             Intent int748 = new Intent(getApplicationContext(), Klasat.class);
                             int748.putExtra("nrSalla","748");
+                            int748.putExtra("username",username);
                             startActivity(int748);
                         }
                         if (closeMatch(Color.rgb(56, 116, 65), touch_color, tolerance)) {
                             Intent int745 = new Intent(getApplicationContext(), Klasat.class);
                             int745.putExtra("nrSalla","745");
+                            int745.putExtra("username",username);
                             startActivity(int745);
                         }
 

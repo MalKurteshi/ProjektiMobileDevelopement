@@ -38,6 +38,7 @@ public class Kati3 extends AppCompatActivity {
     private Databaza objDB;
     private static final String lecturesDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/my-service.php";
     private static final String commentDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/comments.php?t=0";
+    String username;
 
     PhotoView imgvKati3;
     @Override
@@ -45,6 +46,10 @@ public class Kati3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kati3);
         imgvKati3 = (PhotoView) findViewById(R.id.imgvKati3);
+
+
+        Intent myintent = getIntent();
+        username = myintent.getStringExtra("username");
 
         objDB = new Databaza(this);
 
@@ -74,21 +79,25 @@ public class Kati3 extends AppCompatActivity {
                             //Vendoset intenti per me kalu ne klase
                             Intent int301 = new Intent(getApplicationContext(), Klasat.class);
                             int301.putExtra("nrSalla","301");
+                            int301.putExtra("username",username);
                             startActivity(int301);
                         }
                         if (closeMatch(Color.BLUE, touch_color, tolerance)) {
                             Intent int303 = new Intent(getApplicationContext(), Klasat.class);
                             int303.putExtra("nrSalla","303");
+                            int303.putExtra("username",username);
                             startActivity(int303);
                         }
                         if (closeMatch(Color.RED, touch_color, tolerance)) {
                             Intent int304 = new Intent(getApplicationContext(), Klasat.class);
                             int304.putExtra("nrSalla","304");
+                            int304.putExtra("username",username);
                             startActivity(int304);
                         }
                         if (closeMatch(Color.rgb(255, 0, 255), touch_color, tolerance)) {
                             Intent int310 = new Intent(getApplicationContext(), Klasat.class);
                             int310.putExtra("nrSalla","310");
+                            int310.putExtra("username",username);
                             startActivity(int310);
                         }
                         break;
