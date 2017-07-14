@@ -82,64 +82,64 @@ public class Kati5 extends AppCompatActivity {
                         int tolerance = 25;
                         if (closeMatch(Color.RED, touch_color, tolerance)) {
                             //Vendoset intenti per me kalu ne klase
-                            Intent int401 = new Intent(getApplicationContext(), Klasat.class);
-                            int401.putExtra("nrSalla","501");
-                            int401.putExtra("username",username);
-                            startActivity(int401);
+                            Intent int501 = new Intent(getApplicationContext(), Klasat.class);
+                            int501.putExtra("nrSalla","501");
+                            int501.putExtra("username",username);
+                            startActivity(int501);
                         }
                         if (closeMatch(Color.YELLOW, touch_color, tolerance)) {
-                            Intent int408 = new Intent(getApplicationContext(), Klasat.class);
-                            int408.putExtra("nrSalla","502");
-                            int408.putExtra("username",username);
-                            startActivity(int408);
+                            Intent int502 = new Intent(getApplicationContext(), Klasat.class);
+                            int502.putExtra("nrSalla","502");
+                            int502.putExtra("username",username);
+                            startActivity(int502);
                         }
                         if (closeMatch(Color.BLUE, touch_color, tolerance)) {
-                            Intent int411 = new Intent(getApplicationContext(), Klasat.class);
-                            int411.putExtra("nrSalla","507");
-                            int411.putExtra("username",username);
-                            startActivity(int411);
+                            Intent int507 = new Intent(getApplicationContext(), Klasat.class);
+                            int507.putExtra("nrSalla","507");
+                            int507.putExtra("username",username);
+                            startActivity(int507);
                         }
                         if (closeMatch(Color.GREEN, touch_color, tolerance)) {
-                            Intent int414 = new Intent(getApplicationContext(), Klasat.class);
-                            int414.putExtra("nrSalla","511");
-                            int414.putExtra("username",username);
-                            startActivity(int414);
+                            Intent int511 = new Intent(getApplicationContext(), Klasat.class);
+                            int511.putExtra("nrSalla","511");
+                            int511.putExtra("username",username);
+                            startActivity(int511);
                         }
                         if (closeMatch(Color.rgb(127, 0, 0), touch_color, tolerance)) {
-                            Intent int415 = new Intent(getApplicationContext(), Klasat.class);
-                            int415.putExtra("nrSalla","526");
-                            int415.putExtra("username",username);
-                            startActivity(int415);
+                            Intent int526 = new Intent(getApplicationContext(), Klasat.class);
+                            int526.putExtra("nrSalla","526");
+                            int526.putExtra("username",username);
+                            startActivity(int526);
                         }
                         if (closeMatch(Color.rgb(56, 116, 65), touch_color, tolerance)) {
-                            Intent int415 = new Intent(getApplicationContext(), Klasat.class);
-                            int415.putExtra("nrSalla","521");
-                            int415.putExtra("username",username);
-                            startActivity(int415);
+                            Intent int521 = new Intent(getApplicationContext(), Klasat.class);
+                            int521.putExtra("nrSalla","521");
+                            int521.putExtra("username",username);
+                            startActivity(int521);
                         }
                         if (closeMatch(Color.WHITE, touch_color, tolerance)) {
-                            Intent int415 = new Intent(getApplicationContext(), Klasat.class);
-                            int415.putExtra("nrSalla","516");
-                            int415.putExtra("username",username);
-                            startActivity(int415);
+                            Intent int516 = new Intent(getApplicationContext(), Klasat.class);
+                            int516.putExtra("nrSalla","516");
+                            int516.putExtra("username",username);
+                            startActivity(int516);
                         }
                         if (closeMatch(Color.rgb(255, 0, 255), touch_color, tolerance)) {
-                            Intent int415 = new Intent(getApplicationContext(), Klasat.class);
-                            int415.putExtra("nrSalla","515");
-                            int415.putExtra("username",username);
-                            startActivity(int415);
+                            Intent int515 = new Intent(getApplicationContext(), Klasat.class);
+                            int515.putExtra("nrSalla","515");
+                            int515.putExtra("username",username);
+                            startActivity(int515);
                         }
                         if (closeMatch(Color.rgb(0, 255, 255), touch_color, tolerance)) {
-                            Intent int415 = new Intent(getApplicationContext(), Klasat.class);
-                            int415.putExtra("nrSalla","514");
-                            int415.putExtra("username",username);
-                            startActivity(int415);
+                            Intent int514 = new Intent(getApplicationContext(), Klasat.class);
+                            int514.putExtra("nrSalla","514");
+                            int514.putExtra("username",username);
+                            startActivity(int514);
                         }
                         if (closeMatch(Color.rgb(127, 0, 127), touch_color, tolerance)) {
-                            Intent int415 = new Intent(getApplicationContext(), Klasat.class);
-                            int415.putExtra("nrSalla","513");
-                            int415.putExtra("username",username);
-                            startActivity(int415);
+                            Intent int513 = new Intent(getApplicationContext(), Klasat.class);
+                            int513.putExtra("nrSalla","513");
+                            int513.putExtra("username",username);
+                            startActivity(int513);
                         }
                         break;
                 }

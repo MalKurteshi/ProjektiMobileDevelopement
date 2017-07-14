@@ -43,22 +43,31 @@
         android:layout_below="@+id/txvTitulli"
         android:layout_centerHorizontal="true" />
 
-
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/sign_in_button"
+    <com.facebook.login.widget.LoginButton
+        android:text="Kycu me FB"
+        android:id="@+id/button_facebook_signout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnVazhdoPaLogim"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="53dp"/>
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/txvTitulli"
+        android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:id="@+id/status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/signed_out"
-        android:textColor="@android:color/white"
-        android:textSize="14sp"
-        android:layout_below="@+id/sign_in_button"
-        android:layout_centerHorizontal="true"/>
+
+    <!--<com.google.android.gms.common.SignInButton-->
+        <!--android:id="@+id/sign_in_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/btnVazhdoPaLogim"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="53dp"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/status"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/signed_out"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="14sp"-->
+        <!--android:layout_below="@+id/sign_in_button"-->
+        <!--android:layout_centerHorizontal="true"/>-->
 </RelativeLayout>

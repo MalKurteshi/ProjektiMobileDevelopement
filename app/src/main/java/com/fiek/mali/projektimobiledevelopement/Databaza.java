@@ -188,7 +188,7 @@ class Databaza extends SQLiteOpenHelper {
 //Query i rregulluar
 //        return db.rawQuery("select starttime,endtime from schedule where day='"+day+"' and classnumber='"+classnumber+"'",null);
         // Query per diten e Hane (Testuese)
-        return db.rawQuery("select starttime,endtime from schedule where day='E marte' and classnumber='"+classnumber+"'",null);
+        return db.rawQuery("select starttime,endtime from schedule where day='"+day+"' and classnumber='"+classnumber+"'",null);
     }
 
     public Cursor getClassComments(String classnumber) {
@@ -217,7 +217,7 @@ class Databaza extends SQLiteOpenHelper {
         // Origjinali
 //        return db.rawQuery("select * from schedule where day='"+day+"' and classnumber='"+classnumber+"'",null);
         // Testuese
-        return db.rawQuery("select * from schedule where day='E marte' and classnumber='"+classnumber+"'",null);
+        return db.rawQuery("select * from schedule where day='"+day+"' and classnumber='"+classnumber+"'",null);
     }
 
     @Override

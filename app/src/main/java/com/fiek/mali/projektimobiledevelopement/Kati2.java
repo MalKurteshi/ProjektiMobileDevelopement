@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.github.chrisbanes.photoview.PhotoView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import org.joda.time.LocalTime;
 import org.json.JSONArray;
@@ -38,6 +39,7 @@ public class Kati2 extends AppCompatActivity {
     private Databaza objDB;
     private static final String lecturesDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/my-service.php";
     private static final String commentDBURL = "http://sample-env-2.hvzudatm2n.us-west-2.elasticbeanstalk.com/comments.php?t=0";
+    private FirebaseAuth mAuth;
     String username;
 
  PhotoView imgvKati2;
@@ -56,8 +58,10 @@ public class Kati2 extends AppCompatActivity {
 
         if (isNetworkAvailable())
         {
-            new Kati2.RetrieveSchedule().execute();
-            new Kati2.RetrieveComments().execute();
+//            new Kati2.RetrieveSchedule().execute();
+//           new Kati2.RetrieveComments().execute();
+            new RetrieveSchedule().execute();
+            new RetrieveComments().execute();
         }
         else {
             Toast.makeText(this,"Schedule might be not updated! Please connect to the internet to update.",Toast.LENGTH_LONG).show();

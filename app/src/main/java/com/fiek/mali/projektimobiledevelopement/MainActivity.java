@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.facebook.login.LoginManager;
 import com.google.android.gms.auth.api.Auth;
 
 
@@ -40,7 +41,8 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
 
     Button btnVazhdoPaLogim;
-    Button btnKycuMeFB;
+    Button btnSignOut;
+//    Button btnKycuMeFB;
     ProgressDialog progressDialog;
     FirebaseUser user = null;
     //Firebase AUTH
@@ -55,10 +57,12 @@ public class MainActivity extends AppCompatActivity {
 //    SignInButton signInButtonGoogle;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mAuth = FirebaseAuth.getInstance();
         // Progress dialog
         progressDialog = new ProgressDialog(MainActivity.this);
         progressDialog.setMessage("Its loading....");
@@ -72,6 +76,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnSignOut = (Button) findViewById(R.id.button_facebook_signout);
+        btnSignOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                signOut();
+            }
+        });
+
 //        Google
 //        signInButtonGoogle= (SignInButton) findViewById(R.id.sign_in_button);
 //        signInButtonGoogle.setOnClickListener(new View.OnClickListener() {
@@ -82,7 +94,21 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
-        mAuth = FirebaseAuth.getInstance();
+        //
+//                FirebaseUser currentUser = mAuth.getCurrentUser();
+//                Log.v(TAG, String.valueOf(currentUser));
+//                if (currentUser!=null) {
+//                    Intent objKaloNeKatet = new Intent(getApplicationContext(), Katet.class);
+//                    objKaloNeKatet.putExtra("username", currentUser.getDisplayName());
+//                    startActivity(objKaloNeKatet);
+//                    finish();
+//                }
+//                else {
+//                    Intent objKaloNeKatet = new Intent(getApplicationContext(), Katet.class);
+//                    startActivity(objKaloNeKatet);
+//                }
+
+
         // [END initialize_auth]
 
         // [START initialize_fblogin]
@@ -101,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCancel() {
                 Log.d(TAG, "facebook:onCancel");
                 // [START_EXCLUDE]
-//                updateUI(null);
+                updateUI(null);
                 // [END_EXCLUDE]
             }
 
@@ -109,9 +135,10 @@ public class MainActivity extends AppCompatActivity {
             public void onError(FacebookException error) {
                 Log.d(TAG, "facebook:onError", error);
                 // [START_EXCLUDE]
-//                updateUI(null);
+                updateUI(null);
                 // [END_EXCLUDE]
             }
+
         });
         // [END initialize_fblogin]
 
@@ -128,6 +155,10 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
+
+
+//         per testim
+
         if (currentUser!=null) {
             Intent objKaloNeKatet = new Intent(getApplicationContext(), Katet.class);
             objKaloNeKatet.putExtra("username", currentUser.getDisplayName());
@@ -164,7 +195,7 @@ public class MainActivity extends AppCompatActivity {
                             Log.d(TAG, "signInWithCredential:success");
                             FirebaseUser user = mAuth.getCurrentUser();
                             Toast.makeText(MainActivity.this,user.getEmail(),Toast.LENGTH_LONG).show();
-//                            updateUI(user);
+                            updateUI(user);
                             Intent objKaloNeKatet = new Intent(getApplicationContext(), Katet.class);
                             objKaloNeKatet.putExtra("username",user.getDisplayName());
                             startActivity(objKaloNeKatet);
@@ -174,7 +205,7 @@ public class MainActivity extends AppCompatActivity {
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
                             Toast.makeText(MainActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
-//                            updateUI(null);
+                            updateUI(null);
                         }
 
                         // [START_EXCLUDE]
@@ -184,4 +215,28 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
     // [END auth_with_facebook]
+    public void signOut() {
+        mAuth.signOut();
+        LoginManager.getInstance().logOut();
+        updateUI(null);
+
+    }
+
+    private void updateUI(FirebaseUser user) {
+        progressDialog.hide();
+        if (user != null) {
+//            mStatusTextView.setText(getString(R.string.facebook_status_fmt, user.getDisplayName()));
+//            mDetailTextView.setText(getString(R.string.firebase_status_fmt, user.getUid()));
+
+            findViewById(R.id.btnKycuMeFB).setVisibility(View.GONE);
+            findViewById(R.id.button_facebook_signout).setVisibility(View.VISIBLE);
+        } else {
+//            mStatusTextView.setText(R.string.signed_out);
+//            mDetailTextView.setText(null);
+
+            findViewById(R.id.btnKycuMeFB).setVisibility(View.VISIBLE);
+            findViewById(R.id.button_facebook_signout).setVisibility(View.GONE);
+        }
+    }
 }
+

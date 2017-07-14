@@ -85,7 +85,6 @@ public class Klasat extends AppCompatActivity {
             lectureCursorAdapter todoAdapter = new lectureCursorAdapter(this, lectureCursor);
             list.setAdapter(todoAdapter);
         }
-
         if (commentsCursor.getCount() > 0) {
             commentCursorAdapter todoAdapter = new commentCursorAdapter(this, commentsCursor);
             listComments.setAdapter(todoAdapter);
@@ -254,14 +253,19 @@ public class Klasat extends AppCompatActivity {
                 TextView txvClassname = (TextView) view.findViewById(R.id.classname);
                 TextView txvStarttime = (TextView) view.findViewById(R.id.starttime);
                 TextView txvEndtime = (TextView) view.findViewById(R.id.endtime);
+                TextView txvprof = (TextView) view.findViewById(R.id.profesorname);
+
                 // Extract properties from cursor
                 String classname = cursor.getString(cursor.getColumnIndexOrThrow("subject"));
                 String starttime = cursor.getString(cursor.getColumnIndexOrThrow("starttime"));
                 String endtime = cursor.getString(cursor.getColumnIndexOrThrow("endtime"));
+                String profesorname = cursor.getString(cursor.getColumnIndexOrThrow("profesorname"));
                 // Populate fields with extracted properties
                 txvClassname.setText(classname);
                 txvStarttime.setText(starttime);
                 txvEndtime.setText(endtime);
+                txvprof.setText(profesorname);
+
             }
         }
 

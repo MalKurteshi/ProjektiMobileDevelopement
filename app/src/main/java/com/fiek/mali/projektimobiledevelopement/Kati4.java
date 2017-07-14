@@ -58,7 +58,7 @@ public class Kati4 extends AppCompatActivity {
         {
             Log.v("Kati4","Internet is working!");
             new RetrieveSchedule().execute();
-//            new RetrieveComments().execute();
+            new RetrieveComments().execute();
         }
         else {
             Toast.makeText(this,"Schedule might be not updated! Please connect to the internet to update.",Toast.LENGTH_LONG).show();
